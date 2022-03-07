@@ -7,7 +7,7 @@ class Forecaster:
         self.number_of_days = n
 
     def fetch_total_cases_from_csv(self):
-        covid_dataset = pd.read_csv(COVID_DATASET_PATH, usecols=['World'])
+        covid_dataset = pd.read_csv(COVID_DATASET_PATH, usecols=['date', 'World'])
         return covid_dataset
 
     def predict(self):
