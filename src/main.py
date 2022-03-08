@@ -48,6 +48,6 @@ def main():
     if n < 0:
         exit()
 
-    forecaster = Forecaster(n)
-    forecaster.predict()
+    forecaster = Forecaster()
+    forecaster.predict(n)
 main()
