@@ -14,7 +14,7 @@ class LinearRegressionModel:
         result = model.fit()
         return result
 
-    def get_formula_data(self, number_of_cases_column):
+    def get_components_of_line_formula(self, number_of_cases_column):
         log_of_number_of_cases = np.log(number_of_cases_column)
 
         days = np.arange(start=1, stop=len(log_of_number_of_cases) + 1)
@@ -35,7 +35,7 @@ class Forecaster:
     def predict(self, days_from_user):
         linear_regression_model = LinearRegressionModel()
         number_of_cases = self.fetch_number_of_cases_column()
-        const, x1 = linear_regression_model.get_formula_data(number_of_cases)
+        const, x1 = linear_regression_model.get_components_of_line_formula(number_of_cases)
 
         for day in range(1, days_from_user + 1):
             value = int(const * math.pow(x1, day))

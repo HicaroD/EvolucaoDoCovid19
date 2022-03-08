@@ -8,7 +8,7 @@ class TestLinearRegressionModel(unittest.TestCase):
         number_of_cases = forecaster_.fetch_number_of_cases_column()
 
         linear_regression_model = forecaster.LinearRegressionModel()
-        self.const, _ = linear_regression_model.get_formula_data(number_of_cases)
+        self.const, _ = linear_regression_model.get_components_of_line_formula(number_of_cases)
 
         self.assertEqual(round(self.const, 1), 2.2)
 
