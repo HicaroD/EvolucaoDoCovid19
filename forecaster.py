@@ -50,4 +50,6 @@ def main():
 
     forecaster = Forecaster(COVID_DATASET_PATH)
     forecaster.predict(n)
-main()
+
+if __name__ == "__main__":
+    main()
