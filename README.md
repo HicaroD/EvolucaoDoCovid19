@@ -14,16 +14,16 @@ Algoritmo para prever a evolução do contágio do Covid-19 no mundo.
 
 ### Instalação
 
-  1. Crie um ambiente virtual (Passo opcional, caso queira instale os pacotes manualmente)
+  1. Crie um ambiente virtual (Passo opcional, caso queira instale os pacotes globalmente)
 
-  	```bash
-  	python -m venv env && source env/bin/activate
-  	```
+     ```bash
+     python -m venv env && source env/bin/activate
+     ```
 
   2. Instale todas as dependências necessárias
-    ```bash
-  	pip install -r requirements.txt
- 	```
+     ```
+     pip install -r requirements.txt
+ 	   ```
 
 ### Uso
 
