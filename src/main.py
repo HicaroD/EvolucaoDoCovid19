@@ -26,8 +26,8 @@ class LinearRegressionModel:
         return const, x1
 
 class Forecaster:
-    def __init__(self):
-        self.covid_dataset = pd.read_csv(COVID_DATASET_PATH)
+    def __init__(self, dataset_path):
+        self.covid_dataset = pd.read_csv(dataset_path)
 
     def fetch_number_of_cases_column(self):
         return self.covid_dataset['World']
@@ -48,6 +48,6 @@ def main():
     if n < 0:
         exit()
 
-    forecaster = Forecaster()
+    forecaster = Forecaster(COVID_DATASET_PATH)
     forecaster.predict(n)
 main()
