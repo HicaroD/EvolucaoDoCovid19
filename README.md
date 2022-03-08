@@ -6,6 +6,7 @@ Algoritmo para prever a evolução do contágio do Covid-19 no mundo.
 - [Pré-requisitos](#pré-requisitos)
 - [Instalação](#instalação)
 - [Uso](#uso)
+- [Testes unitários](#testes-unitários)
 - [Links](#links)
 
 ### Pré-requisitos
@@ -29,6 +30,12 @@ Algoritmo para prever a evolução do contágio do Covid-19 no mundo.
 
 ```bash
 python forecaster.py
+```
+
+### Testes unitários
+
+```bash
+python forecaster_test.py
 ```
 
 ### Links
