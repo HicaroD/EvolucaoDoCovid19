@@ -1,6 +1,6 @@
 # Previsão da Evolução do vírus Covid-19
 
-Algoritmo para prever a evolução do contágio do Covid-19 no mundo.
+Algoritmo para prever a evolução do contágio do Covid-19 no mundo utilizando regressão linear, mais especificamente o cálculo de [Ordinary Least Squares](https://en.wikipedia.org/wiki/Ordinary_least_squares). Esse método basicamente encontra uma maneira de encaixar uma reta no dataset bidimensional, quando encontramos essa reta somos capazes de montar sua fórmula para calcular os valores na reta, com esses valores podemos basicamente "prever" o futuro porque são valores próximos. Para fazer esse algoritmo, tive o auxílio, sobretudo, da biblioteca `statsmodels` que facilitou o cálculo de `OLS`.
 
 ## Sumário
 - [Pré-requisitos](#pré-requisitos)
