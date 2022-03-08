@@ -15,9 +15,9 @@ class LinearRegressionModel:
         return result
 
     def get_formula_data(self, number_of_cases_column):
-        log_of_number_of_cases = np.log(number_of_cases_column).to_list()
+        log_of_number_of_cases = np.log(number_of_cases_column)
 
-        days = np.arange(len(log_of_number_of_cases)).tolist()
+        days = np.arange(start=1, stop=len(log_of_number_of_cases) + 1)
         days = sm.add_constant(days)
 
         result = self.apply_ordinary_least_squares(log_of_number_of_cases, days)
