@@ -31,7 +31,6 @@ Algoritmo para prever a evolução do contágio do Covid-19 no mundo.
 python src/main.py
 ```
 
-### Uso
 ### Links
 
 Aqui estão os links que me ajudaram no processo da criação do algoritmo:
